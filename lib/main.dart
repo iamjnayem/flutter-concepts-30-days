@@ -3,6 +3,7 @@ import 'package:ui_concept/widgets/Container_Sized.dart';
 import 'package:ui_concept/widgets/button.dart';
 import 'package:ui_concept/widgets/list_grid.dart';
 import 'package:ui_concept/widgets/rowscols.dart';
+import 'package:ui_concept/widgets/snackbar.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.deepOrange,
       ),
-      home: ListGrid(),
+      home: SnackbarWidget(),
     );
   }
 }

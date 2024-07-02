@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_concept/widgets/Container_Sized.dart';
+import 'package:ui_concept/widgets/button.dart';
 import 'package:ui_concept/widgets/rowscols.dart';
 
 void main() => runApp(MyApp());
@@ -12,10 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
         primaryColor: Colors.deepOrange,
       ),
-      home: Rowscols(),
+      home: ButtonWidget(),
     );
   }
 }

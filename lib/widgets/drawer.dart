@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ui_concept/widgets/image.dart';
+import 'package:ui_concept/widgets/NetImage.dart';
 
 class DrawerWidget extends StatefulWidget {
   const DrawerWidget({super.key});
@@ -26,10 +28,11 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 child: Center(
                   child: Row(
                     children: [
-                      CircleAvatar(
-                        radius: 40,
-                        backgroundColor: Colors.white,
-                      ),
+                      // CircleAvatar(
+                      //   radius: 40,
+                      //   backgroundColor: Colors.white,
+                      // ),
+                      ImageWidget(),
                       SizedBox(width: 10),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -59,9 +62,11 @@ class _DrawerWidgetState extends State<DrawerWidget> {
               Divider(),
               ListTile(leading: Icon(Icons.share), title: Text('Share')),
               ListTile(leading: Icon(Icons.logout), title: Text('Logout')),
+              Divider(),
+              NetworkImageWidget(),
             ],
           ),
-        ),
+        ), 
       ),
       body: Container(
         width: w,

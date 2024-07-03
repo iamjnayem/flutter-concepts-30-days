@@ -24,12 +24,12 @@ class SnackbarWidget extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 backgroundColor: Colors.pink[400],
-                duration: Duration(milliseconds: 3000),
-                content: Text('you did wrong'),
+                duration: const Duration(milliseconds: 3000),
+                content: const Text('you did wrong'),
               );
               ScaffoldMessenger.of(context).showSnackBar(snackbar);
             },
-            child: Text('Show Me Snackbar'),
+            child: const Text('Show Me Snackbar'),
           ),
         ),
       ),
